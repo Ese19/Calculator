@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div id="display" class="display">
+            <div class="previous-op" data-previous></div>
+            <div class="current-op" data-current></div>
+        </div>
+        <div id="buttons" class="buttons">
+            <button class="btn digit null" id="zero" data-number>0</button>
+            <button class="btn digit one" id="one" data-number>1</button>
+            <button class="btn digit two" id="two" data-number>2</button>
+            <button class="btn digit three" id="three" data-number>3</button>
+            <button class="btn digit four" id="four" data-number>4</button>
+            <button class="btn digit five" id="five" data-number>5</button>
+            <button class="btn digit six" id="six" data-number>6</button>
+            <button class="btn digit seven" id="seven" data-number>7</button>
+            <button class="btn digit eight" id="eight" data-number>8</button>
+            <button class="btn digit nine" id="nine" data-number>9</button>
+            <button class="btn add op" id="add" data-operation>+</button>
+            <button class="btn subtract op" id="subtract" data-operation>-</button>
+            <button class="btn multiply op" id="multiply" data-operation>*</button>
+            <button class="btn divide op" id="divide" data-operation>÷</button>
+            <button class="btn decimal digit" id="decimal" data-number>.</button>
+            <button class="btn clear" id="clear" data-clear>c</button>
+            <button class="btn equal" id="equals" data-equal>=</button>
+        </div>
+    </div>
+</body>
+</html>

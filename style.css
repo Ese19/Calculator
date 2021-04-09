@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #ffabe1, #a685e2);
+}
+
+.container{
+    background-color: black;
+    background: #ffe6e6;
+    width: 200px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.display{
+    background-color: #6155a6;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 20px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.btn{
+    border-radius: 45%;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    margin: 2px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+    outline: none;
+}
+
+.digit{
+    background: #E4E7E8;
+    color: #51555f;
+}
+
+.op{
+    background: #d6c1eb;
+    color: #ad2de9;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.one{
+    grid-area: one;
+}
+.two {
+    grid-area: two;
+}
+.three {
+    grid-area: three;
+}
+.four {
+    grid-area: four;
+}
+.five {
+    grid-area: five;
+}
+.six {
+    grid-area: six;
+}
+.seven {
+    grid-area: seven;
+}
+.eight {
+    grid-area: eight;
+}
+.nine {
+    grid-area: nine;
+}
+.null {
+    grid-area: null;
+}
+.add {
+    grid-area: add;
+}
+.subtract {
+    grid-area: subtract;
+}
+.multiply {
+    grid-area: multiply;
+}
+.divide {
+    grid-area: divide;
+}
+.decimal {
+    grid-area: decimal;
+}
+
+.clear {
+    background:  #ff7a00;
+    color: white;
+    grid-area: clear;
+}
+
+.equal {
+    background:  #ad2de9;
+    color: white;
+    height: 220px;
+    border-radius: 25px;
+    grid-area: equal;
+}
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, auto);
+    grid-gap: 5px;
+    grid-template-areas: 
+        "add subtract multiply divide"
+        "seven eight nine equal"
+        "four five six equal"
+        "one two three equal"
+        "null decimal clear equal";
+}
